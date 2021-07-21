@@ -7,7 +7,7 @@ const walkers = getWalkers()
 
 // Function whose responsibility is to find the walker assigned to a pet
 const findWalker = (pet, walkers) => {
-    let petWalker = null
+    let petWalker = ""
 
     for (const walker of walkers) {
         if (walker.id === pet.walkerId) {
