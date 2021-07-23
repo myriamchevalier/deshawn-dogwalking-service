@@ -11,6 +11,7 @@ document.addEventListener(
             const [,petId] = itemClicked.id.split("--")
             for (const pet of pets) {
                 if (pet.id === parseInt(petId)) {
+                    
                     for (const walker of walkers) {
                         if (pet.walkerId === walker.id){
                             window.alert(`${pet.name} is being walked by ${walker.name}`)
